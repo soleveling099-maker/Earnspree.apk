@@ -4,7 +4,6 @@ workflows:
     environment:
       vars:
         PAYSTACK_SECRET_KEY: $PAYSTACK_SECRET_KEY
-      flutter: false
     scripts:
       - name: Install dependencies
         script: |

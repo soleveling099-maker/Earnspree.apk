@@ -1,0 +1,17 @@
+workflows:
+  android-workflow:
+    name: Android build
+    environment:
+      vars:
+        PAYSTACK_SECRET_KEY: $PAYSTACK_SECRET_KEY
+      flutter: false
+    scripts:
+      - name: Install dependencies
+        script: |
+          pip install --upgrade pip
+          pip install buildozer cython
+      - name: Build APK
+        script: |
+          buildozer android debug
+    artifacts:
+      - bin/*.apk

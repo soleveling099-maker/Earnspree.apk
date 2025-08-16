@@ -1,5 +1,31 @@
-.env
+# Ignore Python cache files
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
-*.log.env
+*.pyd
+
+# Ignore virtual environments
+venv/
+env/
+*.env
+
+# Ignore configuration files with secrets
+config.py
+
+# Ignore build and distribution folders
+.buildozer/
+dist/
+build/
+*.apk
+*.zip
+
+# Ignore editor and OS files
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+# Ignore logs
+*.log
